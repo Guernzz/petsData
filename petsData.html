@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets Info</title>
+</head>
+<body>
+    <h1>Welcome to Pets Data</h1>
+    <h2 id = "userChose"></h2>
+    <div>--------------------------</div>
+    <p id="arrPrint"></p>
+    <div>--------------------------</div>
+
+    <script>
+                const petsData = [
+
+            {
+
+                petName: "Stella",
+
+                age: 7,
+
+                weightInKilos: 24,
+
+                breed: "Dalmation"
+
+            },
+
+            {
+
+                petName: "Cody",
+
+                age: 8,
+
+                weightInKilos: 22,
+
+                breed: "Corgi"
+
+            },
+
+            {
+
+                petName: "Mango",
+
+                age: 2,
+
+                weightInKilos: 11,
+
+                breed: "Persian"
+
+            },
+
+            {
+
+                petName: "Lucy",
+
+                age: 4,
+
+                weightInKilos: 35,
+
+                breed: "Ball Python"
+
+            },
+
+            {
+
+                petName: "Kimbo",
+
+                age: 1,
+
+                weightInKilos: 11,
+
+                breed: "Caracal"
+
+            }
+
+        ];
+
+        var dataLength = petsData.length - 1
+        var userResponse = prompt("Enter a number between 0 and " + dataLength)        
+
+        if (userResponse == 0){
+
+            document.getElementById("userChose").innerHTML = "You chose: " + userResponse
+            document.getElementById("arrPrint").innerHTML = petsData[userResponse].petName + " the dog is " + petsData[userResponse].age + " years old."+ " This dog weighs " + petsData[userResponse].weightInKilos + " kilos and is a " + petsData[userResponse].breed + " Breed.";
+        }
+        
+        if (userResponse == 1){
+
+            document.getElementById("userChose").innerHTML = "You chose: " + userResponse
+            document.getElementById("arrPrint").innerHTML = petsData[userResponse].petName + " the dog is " + petsData[userResponse].age + " years old."+ " This dog weighs " + petsData[userResponse].weightInKilos + " kilos and is a " + petsData[userResponse].breed + " Breed.";
+        }
+        
+        if (userResponse == 2){
+
+            document.getElementById("userChose").innerHTML = "You chose: " + userResponse
+            document.getElementById("arrPrint").innerHTML = petsData[userResponse].petName + " the cat is " + petsData[userResponse].age + " years old."+ " This cat weighs " + petsData[userResponse].weightInKilos + " kilos and is a " + petsData[userResponse].breed + " Breed.";
+        }
+
+        if (userResponse == 3){
+
+            document.getElementById("userChose").innerHTML = "You chose: " + userResponse
+            document.getElementById("arrPrint").innerHTML = petsData[userResponse].petName + " the snake is " + petsData[userResponse].age + " years old."+ " This snake weighs " + petsData[userResponse].weightInKilos + " kilos and is a " + petsData[userResponse].breed + " Breed."; 
+        }
+
+        if (userResponse == 4){
+            document.getElementById("userChose").innerHTML = "You chose: " + userResponse
+            document.getElementById("arrPrint").innerHTML = petsData[userResponse].petName + " the Caracal is " + petsData[userResponse].age + " years old."+ " This dog weighs " + petsData[userResponse].weightInKilos + " kilos and is a " + petsData[userResponse].breed + " Breed.";
+        }
+
+    </script>
+
+<!-- petsData.length;
+ -->
+</body>
+</html>
